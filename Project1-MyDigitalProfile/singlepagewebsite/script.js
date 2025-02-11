@@ -1,5 +1,5 @@
 function addRecommendation() {
-  // Get the message of the new recommendation
+  showPopup(true);
   let recommendation = document.getElementById("new_recommendation");
   // If the user has left a recommendation, display a pop-up
   if (recommendation.value != null && recommendation.value.trim() != "") {
@@ -14,7 +14,7 @@ function addRecommendation() {
     document.getElementById("all_recommendations").appendChild(element); 
     
     // Reset the value of the textarea
-    recommendation.value = "";
+    recommendation.value = "Thanks for your Recommendation!";
   }
 }
 
