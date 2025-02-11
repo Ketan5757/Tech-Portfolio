@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ketan Darekar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ketan Darekar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ketan.darekar99@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +49 17667708933
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://indoanalytica.com/static/images/data-science-5.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I am Ketan Darekar! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am currently pursuing my Master's in Applied Computer Science at SRH Heidelberg. Passionate about AI and development, I have gained expertise in React,
+             Google Cloud, SAP ABAP, Java, Python, databases, and AI-driven technologies.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+            <img src="html_finalprojimages/html5.png"/>
+            <h6>HTML</h6>
+            <p>3 years experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/python.jpg"/>
+            <h6>Python</h6>
+            <p>2 years experience</p>
+        </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/mysql.jpg"/>
+            <h6>MYSQL</h6>
+            <p>2 years experience</p>
+          </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React Js</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node Js</h6>
+            <p>1 year experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/C++.jpg"/>
+            <h6>C++</h6>
+            <p>1 year experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+          </div> 
+
+          
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Hotel Management System</h3>
+            <ul>
+              <li>Led end-to-end development of a Hotel Management System as a Full-Stack Developer using Java, MySQL, and NetBeans IDE.</li>
+              <li> Handled frontend design, backend coding, and database integration with a focus on admin features.</li>
+              <li> Gained expertise in UI/UX design, collaborative development, and system architecture throughout the project</li>
+                
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AutoML vs Custom Training </h3>
+            <ul>
+              <li>Comparing these two machine learning services in terms of ease of use, image classification, implementation, customizability.</li>
+              <li>For custom Training (Tensor Flow), using python vs code and used Anaconda for creating environment for image classification.</li>
+              <li> AutoML workflow for Image Classification by GCP.</li>
+                
+            </ul>
+            
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>E-Commerce Website</h3>
+            <ul>
+              <li>Developed a scalable e-commerce platform using React.js and Node.js with microservices architecture</li>
+              <li>Integrated Stripe for secure payments and implemented JWT authentication.</li>
+              <li>Utilized MongoDB for Data management</li>
+              <li>Built a responsive, user-friendly interface and deployed with Docker containers.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ketan Ketan is a quick learner and a skilled frontend developer. 
+          He has a great attitude, works well in teams, and takes initiative. With expertise in HTML, CSS, JavaScript, and React.js,
+          he creates clean and responsive designs. I highly recommend him!
+          <b>-Education4Ol</b>
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Ketan at LetsGrowMore was a great experience. 
+          He’s skilled in JavaScript, HTML, and CSS, and always goes the extra mile to deliver quality work.
+          I’d definitely work with him again on future projects!
+          <b>-LetsGrowMore</b>
+          <span>&#8221;</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
