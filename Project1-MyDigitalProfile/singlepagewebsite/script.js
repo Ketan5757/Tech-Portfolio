@@ -14,7 +14,7 @@ function addRecommendation() {
     document.getElementById("all_recommendations").appendChild(element); 
     
     // Reset the value of the textarea
-    recommendation.value = "Thanks for your Recommendation!";
+    recommendation.value = "";
   }
 }
 
